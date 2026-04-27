@@ -1,0 +1,27 @@
+# Data
+data/raw/
+data/processed/
+
+# Search Indices & Vector Stores
+*.faiss
+*.index
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.ipynb_checkpoints/
