@@ -88,6 +88,17 @@ The RAPTOR system follows a modular RAG architecture:
 - **Reason**: RAG systems require small, focused context windows (200-300 words) for efficient retrieval and to stay within LLM context limits.
 - **Outcome**: Processed knowledge base ready for embedding phase.
 
+#### 2026-04-27 | Structural Refactoring & Modularization
+- **Task**: Refactor project structure to organize scripts into a modular `src/` directory.
+- **Tool**: Antigravity / Terminal
+- **Prompt**: "Refactor the RAPTOR project structure to organize all Python scripts into the src/ directory."
+- **Changes**: 
+    - Moved core scripts (`download_safe.py`, `chunk_wikipedia.py`, `verify_datasets.py`, etc.) to `src/data_processing/`.
+    - Created `__init__.py` files in all functional subdirectories of `src/`.
+    - Initialized placeholders for `embedding/`, `retrieval/`, `generation/`, `attacks/`, `defenses/`, and `evaluation/`.
+- **Reason**: To enhance codebase maintainability and enable professional modular imports as the RAG pipeline complexity increases.
+- **Outcome**: Established a scalable, industry-standard research project architecture.
+
 ---
 
 ## Decisions & Justifications
@@ -111,7 +122,7 @@ The RAPTOR system follows a modular RAG architecture:
 ---
 
 ## Future Work
-- **Chunking Strategy**: Implementing semantic vs. fixed-size chunking in `src/processing.py`.
-- **Embedding Pipeline**: Benchmarking `all-MiniLM-L6-v2` vs `bge-small-en-v1.5`.
-- **Attack Simulation**: Injecting BIPIA malicious prompts into the retrieved context.
-- **Defense Implementation**: Developing a detection-based classifier to filter out indirect injections.
+- **Embedding Pipeline**: Benchmarking `all-MiniLM-L6-v2` vs `bge-small-en-v1.5` for chunk vectorization.
+- **Vector Database**: Implementing local FAISS index for high-speed similarity search.
+- **Attack Simulation**: Injecting BIPIA malicious prompts into retrieved context windows.
+- **Defense Implementation**: Developing detection-based classifiers and robust prompt templates.
