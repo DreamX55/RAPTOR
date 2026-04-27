@@ -39,4 +39,5 @@ To ensure a comprehensive analysis, the project utilizes the following datasets:
 
 ## Current Status
 - ✅ **Dataset setup completed**: All 5 datasets are downloaded and verified.
-- 🔄 **Next Step**: Implementing data chunking and embedding logic.
+- ✅ **Preprocessing completed**: Wikipedia knowledge base chunked into 39,812 semantic segments.
+- 🔄 **Next Step**: Implementing the embedding pipeline using Sentence Transformers.

@@ -77,6 +77,17 @@ The RAPTOR system follows a modular RAG architecture:
 - **Reason**: To maintain a professional audit trail of all technical decisions and project milestones, facilitating future research paper writing and reproducibility.
 - **Outcome**: Comprehensive project log established and integrated into the repository.
 
+#### 2026-04-27 | Data Preprocessing & Chunking
+- **Task**: Implement semantic chunking for the Wikipedia knowledge base.
+- **Tool**: Antigravity / Python Script
+- **Prompt**: "Create a Python script called chunk_wikipedia.py to preprocess and chunk the Wikipedia dataset for a RAG pipeline."
+- **Changes**: 
+    - Created `chunk_wikipedia.py`.
+    - Processed 5,000 raw documents into 39,812 semantic chunks.
+    - Saved output to `data/processed/wikipedia_chunks`.
+- **Reason**: RAG systems require small, focused context windows (200-300 words) for efficient retrieval and to stay within LLM context limits.
+- **Outcome**: Processed knowledge base ready for embedding phase.
+
 ---
 
 ## Decisions & Justifications
@@ -85,7 +96,11 @@ The RAPTOR system follows a modular RAG architecture:
 - **Decision**: Limit datasets to 5,000 samples instead of full corpora.
 - **Tradeoff**: Reduces total data variety but allows for rapid iteration and stays within 1GB storage limit. It is sufficient for a "Robustness Analysis" proof-of-concept.
 
-### 2. FAISS vs Managed Vector DB
+### 2. Semantic Chunking Strategy
+- **Decision**: Use sentence-boundary aware chunking with a 200-300 word target.
+- **Justification**: Prevents cutting mid-sentence, which preserves local semantic meaning and improves retrieval accuracy. 300 words is a balanced size for most modern LLM context windows (e.g., GPT-3.5/4).
+
+### 3. FAISS vs Managed Vector DB
 - **Decision**: Planned use of **FAISS** for local indexing.
 - **Justification**: FAISS is lightweight, supports rapid local testing, and doesn't require external cloud API management, making it ideal for research-focused benchmarking.
 
