@@ -1,0 +1,14 @@
+sentence-transformers
+faiss-cpu
+datasets
+numpy
+tqdm
+transformers
+torch
+requests
+
+# Optional dependencies for analysis and visualization
+# pandas
+# matplotlib
+# seaborn
+# scikit-learn

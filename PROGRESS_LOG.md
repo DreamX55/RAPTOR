@@ -99,6 +99,63 @@ The RAPTOR system follows a modular RAG architecture:
 - **Reason**: To enhance codebase maintainability and enable professional modular imports as the RAG pipeline complexity increases.
 - **Outcome**: Established a scalable, industry-standard research project architecture.
 
+#### 2026-04-27 | Hugging Face Hub Authentication
+- **Task**: Authenticate local environment for gated dataset access.
+- **Tool**: terminal (Manual)
+- **Prompt**: `hf auth login`
+- **Changes**: Configured Hugging Face authentication token (`raptor-local-project`).
+- **Reason**: To ensure uninterrupted access to restricted research datasets (e.g., BIPIA, Natural Questions) on the Hugging Face Hub.
+- **Outcome**: Authentication successful; token saved to local cache.
+- **Errors/Issues**: Initial attempt with `huggingface-cli login` failed due to tool deprecation. **Resolution**: Switched to the modern `hf` CLI as recommended.
+
+### Phase 2: Embedding & Retrieval Pipeline
+
+#### 2026-04-27 | Vector Indexing & Embedding Implementation
+- **Task**: Implement baseline embedding generation and FAISS indexing.
+- **Tool**: Antigravity
+- **Prompt**: "Create a Python script located at: src/embedding/build_faiss_index.py. Goal: Generate embeddings for chunked Wikipedia data and build a FAISS index for retrieval in a RAG pipeline..."
+- **Changes**: 
+    - Created `src/embedding/build_faiss_index.py`.
+    - Integrated `sentence-transformers` for local vector generation using the `all-MiniLM-L6-v2` model.
+    - Implemented FAISS `IndexFlatL2` for efficient similarity search.
+    - Developed a JSON-based chunk mapping system (`chunk_mapping.json`) to persist metadata.
+- **Reason**: To transition from raw text processing to a searchable vector space, enabling the core retrieval mechanism of the RAPTOR RAG pipeline.
+- **Outcome**: Successfully processed ~40,000 Wikipedia chunks into a local FAISS index; confirmed retrieval capabilities via query test function.
+
+#### 2026-04-27 | Retrieval Module Implementation
+- **Task**: Create a reusable retrieval module for vector search.
+- **Tool**: Antigravity
+- **Prompt**: "Create a Python script located at: src/retrieval/retrieve.py Goal: Implement a reusable retrieval module that loads the FAISS index and returns the most relevant chunks for a given query."
+- **Changes**: Created `src/retrieval/retrieve.py` with `FAISSRetriever` class.
+- **Reason**: To decouple the retrieval logic from other pipeline components, ensuring modularity and easier benchmarking of retrieval accuracy.
+- **Outcome**: Established a standalone module for similarity search and metadata mapping.
+
+#### 2026-04-27 | RAG Pipeline Optimization & Local LLM Integration
+- **Task**: Build and optimize an end-to-end RAG pipeline using local inference.
+- **Tool**: Antigravity
+- **Prompts**: 
+    - "Build a clean, reusable RAG pipeline that integrates retrieval and generation." (Initial T5 implementation)
+    - "Update src/generation/rag_pipeline.py to improve answer generation quality." (Quality optimization)
+    - "Update src/generation/rag_pipeline.py to replace FLAN-T5 with Ollama (Mistral)." (Model upgrade)
+- **Changes**: 
+    - Created `src/generation/rag_pipeline.py`.
+    - Implemented and then optimized context windowing (`top_k=2`, 150-word truncation).
+    - Switched generative backend from `google/flan-t5-small` to `mistral` via Ollama REST API.
+    - Added comprehensive error handling for local LLM connectivity.
+- **Reason**: Mistral offers significantly higher reasoning capability than T5-small for complex QA tasks; Ollama API reduces local memory footprint by offloading model hosting.
+- **Outcome**: A functional, low-latency RAG system capable of generating context-aware answers using high-performance local models.
+
+### Phase 3: System Optimization & Reproducibility
+
+#### 2026-04-27 | Dependency Management & Environment Documentation
+- **Task**: Formalize project dependencies and setup procedures.
+- **Tool**: Antigravity
+- **Changes**: 
+    - Created `requirements.txt` with standardized library list.
+    - Updated `README.md` with `venv` (virtual environment) creation and activation commands.
+- **Reason**: To ensure research reproducibility and simplify the onboarding process for external contributors or evaluators.
+- **Outcome**: Project environment is now standardized and documented for one-command installation.
+
 ---
 
 ## Decisions & Justifications
@@ -112,17 +169,32 @@ The RAPTOR system follows a modular RAG architecture:
 - **Justification**: Prevents cutting mid-sentence, which preserves local semantic meaning and improves retrieval accuracy. 300 words is a balanced size for most modern LLM context windows (e.g., GPT-3.5/4).
 
 ### 3. FAISS vs Managed Vector DB
-- **Decision**: Planned use of **FAISS** for local indexing.
+- **Decision**: Implemented use of **FAISS** for local indexing.
 - **Justification**: FAISS is lightweight, supports rapid local testing, and doesn't require external cloud API management, making it ideal for research-focused benchmarking.
 
-### 3. Streaming Mode for Downloads
+### 4. Embedding Model Selection
+- **Decision**: Selected `all-MiniLM-L6-v2` for baseline vectorization.
+- **Justification**: Provides a strong balance between embedding quality and local inference speed. Its small dimension (384) allows for efficient FAISS indexing and low memory overhead during development.
+
+### 5. Streaming Mode for Downloads
 - **Decision**: Enforced `streaming=True` in HuggingFace loaders.
 - **Justification**: Crucial for Wikipedia and NQ which are tens of gigabytes in size. Fetches only the required rows without saturating network/disk.
+
+### 6. CLI Tooling: `hf` over `huggingface-cli`
+- **Decision**: Adopted the modern `hf` CLI for hub interactions.
+- **Justification**: `huggingface-cli` is deprecated; the `hf` tool provides a more robust and future-proof interface for authentication and data management.
+
+### 7. Generative Backend: Ollama (Mistral) vs. Transformers
+- **Decision**: Switched to **Ollama** hosting **Mistral-7B** for generation.
+- **Justification**: Mistral provides better instruction-following and nuance than smaller T5 models. Using the Ollama API separates the model lifecycle from the Python application, improving stability and resource management.
+
+### 8. Virtual Environment Requirement
+- **Decision**: Enforced use of `venv` for all project executions.
+- **Justification**: Prevents library version conflicts and ensures the research environment remains isolated and replicable.
 
 ---
 
 ## Future Work
-- **Embedding Pipeline**: Benchmarking `all-MiniLM-L6-v2` vs `bge-small-en-v1.5` for chunk vectorization.
-- **Vector Database**: Implementing local FAISS index for high-speed similarity search.
-- **Attack Simulation**: Injecting BIPIA malicious prompts into retrieved context windows.
-- **Defense Implementation**: Developing detection-based classifiers and robust prompt templates.
+- **Attack Simulation**: Injecting BIPIA malicious prompts into the retrieval context window to evaluate Mistral's robustness.
+- **Defense Implementation**: Developing detection-based classifiers to filter adversarial contexts before they reach the generation phase.
+- **Evaluation Framework**: Implementing ROUGE, METEOR, and Exact Match (EM) metrics for automated performance tracking.

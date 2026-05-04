@@ -23,8 +23,11 @@ To ensure a comprehensive analysis, the project utilizes the following datasets:
 
 ## Setup Instructions
 1. **Install Dependencies**:
+   Create a virtual environment and install dependencies:
    ```bash
-   pip install datasets==2.14.6 "pyarrow<15.0.0"
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
    ```
 2. **Download Datasets**:
    Run the safe download script to fetch small subsets (5000 samples) of the required data:
