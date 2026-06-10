@@ -260,3 +260,22 @@ The RAPTOR system follows a modular RAG architecture:
   - A benchmark evaluation specification was formalized for future ASR experiments: 1,000 Natural Questions + 1,000 HotpotQA questions = 2,000 total evaluation queries.
 - **Recommendations for Next Phase**: 
   - All Phase 3B controlled attack datasets and Phase 2 FAISS indices must be completely regenerated against the new >100k chunk corpus before running adversarial evaluations.
+
+---
+
+### Phase 3D: Corpus Regeneration & Index Reconstruction
+- **Implementation Date**: 2026-06-10
+- **Activity**: 
+  - Verified the expanded 106,463 chunk clean corpus correctly loads and matches the required specifications.
+  - Developed optimized embedding scripts (`build_faiss_index_15k.py`) that strictly avoided recomputing embeddings for clean chunks across the three attacked datasets.
+  - Dynamically injected attack datasets to generate newly attacked 1%, 5%, and 10% datasets against the 106,463 baseline without modifying original 5k baseline files.
+  - Successfully generated the mapping files and FAISS indices for the Clean dataset and the three attacked datasets.
+- **Datasets & FAISS Indexes Generated**:
+  - `faiss_index_15k.index` (106,463 vectors)
+  - `faiss_index_attacked_1pct.index` (107,527 vectors)
+  - `faiss_index_attacked_5pct.index` (111,786 vectors)
+  - `faiss_index_attacked_10pct.index` (117,109 vectors)
+- **Validation**:
+  - Executed automated validations (`index_validation.py`) to confirm exact vector counts match mapping lengths and dataset bounds.
+  - Verified embedding dimensions are properly set to 384 for all indexes.
+  - **System Readiness Assessment**: The RAPTOR Retrieval infrastructure is fully scaled and mathematically verified. Phase 4 ASR evaluations may officially commence.
