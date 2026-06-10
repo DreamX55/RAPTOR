@@ -246,3 +246,17 @@ The RAPTOR system follows a modular RAG architecture:
 - **Validation**:
   - Confirmed the math accurately scales base Wikipedia chunks (39,812) with 1%, 5%, and 10% attack ratios.
   - Ensured all injected chunks possess unique `chunk_id` values to prevent retrieval collisions.
+
+---
+
+### Phase 3C: Retrieval Corpus Expansion
+- **Implementation Date**: 2026-06-10
+- **Activity**: 
+  - Increased the clean Wikipedia baseline dataset to exceed a robust 100,000 chunk threshold required for large-scale experiments.
+  - Downloaded 30,000 raw Wikipedia articles (saving them as `wikipedia_15k` to meet user naming specs) using streaming, avoiding memory limits.
+  - Processed and chunked the documents, creating `wikipedia_chunks_15k` which successfully yielded 106,463 chunks.
+  - Preserved the original 5k baseline datasets untouched.
+- **Future Benchmark Specs**:
+  - A benchmark evaluation specification was formalized for future ASR experiments: 1,000 Natural Questions + 1,000 HotpotQA questions = 2,000 total evaluation queries.
+- **Recommendations for Next Phase**: 
+  - All Phase 3B controlled attack datasets and Phase 2 FAISS indices must be completely regenerated against the new >100k chunk corpus before running adversarial evaluations.
