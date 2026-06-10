@@ -230,3 +230,19 @@ The RAPTOR system follows a modular RAG architecture:
   - Selected 4 core attack categories to build the benchmark: Malware Distribution, Clickbait, Persuasion, and Alphanumeric Substitution.
   - Recommended injection ratio: 5% of the total dataset to simulate realistic poisoning without overwhelming the baseline metrics.
 - **System Readiness Assessment**: The BIPIA attack taxonomy is fully mapped to RAPTOR. We are ready to execute the attack injections using the recommended strategies.
+
+---
+
+### Phase 3B: Controlled Attack Injection Pipeline
+- **Implementation Date**: 2026-06-10
+- **Activity**: 
+  - Expanded the raw BIPIA prompts into a diverse 1,000-document attack corpus using procedural paraphrasing and contextual wrappers to maximize scientific validity.
+  - Developed an automated injection pipeline (`src/attacks/inject_attacks.py`) to append attack chunks into the knowledge base without modifying the clean data.
+- **Datasets Generated**:
+  - `data/processed/attack_docs` (1,000 generated attack chunks)
+  - `data/processed/wikipedia_chunks_attacked_1pct` (40,210 total chunks)
+  - `data/processed/wikipedia_chunks_attacked_5pct` (41,802 total chunks)
+  - `data/processed/wikipedia_chunks_attacked_10pct` (43,793 total chunks)
+- **Validation**:
+  - Confirmed the math accurately scales base Wikipedia chunks (39,812) with 1%, 5%, and 10% attack ratios.
+  - Ensured all injected chunks possess unique `chunk_id` values to prevent retrieval collisions.
