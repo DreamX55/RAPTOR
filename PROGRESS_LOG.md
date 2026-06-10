@@ -216,3 +216,17 @@ The RAPTOR system follows a modular RAG architecture:
 - **System Readiness Assessment**: The baseline RAG system is fully structured, functional for retrieval, reproducible, and ready. 
 
 **Readiness Score**: **READY FOR ATTACK PHASE**
+
+---
+
+### BIPIA Dataset Analysis
+- **Analysis Date**: 2026-06-10
+- **Findings**:
+  - The BIPIA dataset is structured to inject payloads into external contexts. The available dataset format includes raw JSON attack banks (`text_attack_train.json`, `code_attack_train.json`).
+  - Total attack prompts available: 1,350 across multiple splits.
+  - Extracted multiple taxonomy categories including: Information Retrieval, Content Creation, Learning and Tutoring, Alphanumeric Substitution, Instruction, Clickbait, Malware Distribution, etc.
+  - Mapped attacks to RAG target phases: obfuscation attacks target the Retrieval phase (to bypass filters), whereas direct payload attacks (e.g., Malware, Clickbait) target the Generation phase.
+- **Recommendations**:
+  - Selected 4 core attack categories to build the benchmark: Malware Distribution, Clickbait, Persuasion, and Alphanumeric Substitution.
+  - Recommended injection ratio: 5% of the total dataset to simulate realistic poisoning without overwhelming the baseline metrics.
+- **System Readiness Assessment**: The BIPIA attack taxonomy is fully mapped to RAPTOR. We are ready to execute the attack injections using the recommended strategies.
