@@ -1,0 +1,602 @@
+[
+  {
+    "query_id": "nq_-7605877563327156025",
+    "question": "do jake and olivia get together in season 7",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-8673959878206439097",
+    "question": "where are mixed regions of coniferous and deciduous forests found",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a7f382d55429930675136b2",
+    "question": "What is the common profession of Jean-Pierre Melville and Manfred Noa?",
+    "answer": "filmmaker",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ae3f3f75542995dadf2426e",
+    "question": "When was the American painter and inventor died who after who's name Morse town named in southern Saskatchewan, Canada?",
+    "answer": "April 2, 1872",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-8153142841367158786",
+    "question": "who sang don't drink don't smoke",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5ac1cfe05542994d76dcceea",
+    "question": "In which school was the fictional character in \"The Simpsons\" which was voice by Marcia Wallace a teacher?",
+    "answer": "Springfield Elementary School",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_6747580286477815563",
+    "question": "center for bits and atoms at mit media lab",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_3907927322316652765",
+    "question": "who sang the song our house in the middle of the street",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-214328637128534683",
+    "question": "where is the sword in the stone located",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5adff35955429925eb1afb7a",
+    "question": "What is the name of this South Korean musician, singer-songwriter, record producer and actor in the rock band CNBLUE, who wrote the song You, My Star?",
+    "answer": "Jung Yong-hwa",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-5154813042082736851",
+    "question": "places that are part of the united states",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5ae74f345542997b22f6a6ae",
+    "question": "Procopio Franco Hern\u00e1ndez, competed in the 2004 Summer Olympics and in the 2008 Summer Olympics, for which sport of running on a measured course over an established road (as opposed to track and field and cross country running)?",
+    "answer": "Road running",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-7218903663954580287",
+    "question": "who wrote i'm on top of the world",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-7107992706769397718",
+    "question": "when did the song i love rock and roll come out",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_9164321463116886443",
+    "question": "where do clouds form when there is a cold front",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a73701155429901807db062",
+    "question": "Which Hall of Fame point guard was first selected for an NBA All-Star Game in 1994, alongside Shawn Kemp?",
+    "answer": "Gary Payton",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_4439752785381124753",
+    "question": "what is the joint commission and what do they do",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_8918312925944566188",
+    "question": "what is 7 babies born at the same time",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-8043406213014446434",
+    "question": "when did the galaxy s8+ come out",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a78da48554299029c4b5eb3",
+    "question": "Where did the play by an award-winning American actor and an accomplished playwright premiere where it broke box office records and garnered critical acclaim?",
+    "answer": "Portland Stage Company",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-3386788704299100742",
+    "question": "who was the first woman president of pakistan",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a8c585d554299653c1aa044",
+    "question": "Jeremy Brock is the writer and director of this 2011 drama that was adapted from him and what other female?",
+    "answer": "Rosemary Sutcliff",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_3922329138621493402",
+    "question": "what is the name of a male turtle",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-7282109206318160773",
+    "question": "who plays gandolf in lord of the rings",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5ab69f425542995eadef0044",
+    "question": "The Prince of Wales Glacier was named for what individual who was the oldest person to be next in line to the throne since Sophia of Hanover?",
+    "answer": "Charles, Prince of Wales",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_2075064368588296973",
+    "question": "sea otters have been used as an example of the keystone species concept. this means that sea otters",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_8297802040834295423",
+    "question": "who plays who in world cup knock out stages",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-8985181045468440524",
+    "question": "where does the flexor digitorum superficialis distally attach",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a7de9af5542995f4f4022fc",
+    "question": "Which writer, Jorge Amado or Sarah Caudwell, remains the best known of modern Brazilian writers?",
+    "answer": "Jorge Leal Amado de Faria",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-7048346033340327970",
+    "question": "when was the first thing sent into space",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_7714777126144124624",
+    "question": "the hero of san jacinto became the first president of the texas republic",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-1095094922977237215",
+    "question": "when did the first automatic car come out",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a84b1e75542997b5ce3ff14",
+    "question": "What has made headlines in relation to the arrest of the British politician who has been the conservative member of parliament for Ashford since 1997 and the First Secretary of State nd Minister for the Cabinet Office since 11 June 2017?",
+    "answer": "the doctrine of Parliamentary privilege",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a88e830554299206df2b39e",
+    "question": " What the locals consider for a suburb of a town which is in the Division of Mayo?",
+    "answer": "township of Stirling",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-7110893083607696814",
+    "question": "is land rover and jaguar the same company",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a86ebcd5542991e77181690",
+    "question": "The Menu television series stars among others, Noel Leung, a Hong Kong actress known for her roles in what?",
+    "answer": "TVB television",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-5319914028679712044",
+    "question": "download mp3 song im in love with the shape of you",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a76405d5542994ccc91873e",
+    "question": "When was Goodnight Vienna, the fourth studio album by Ringo Starr released in the US?",
+    "answer": "27 January 1975",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5adc8a905542994d58a2f641",
+    "question": "Which Russian music project that refreshes on Wednesday featured the song \"Feel It Still\" at number one on their airplay chart and ",
+    "answer": "Tophit",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ae1475455429901ffe4ae3a",
+    "question": "How many stored does the American fast food restaurant franchise that sponsored Subway 400 have? ",
+    "answer": "45,000",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a819aef55429926c1cdad50",
+    "question": "Which director has won more Canadian Screen Awards, Sidney Olcott or Denis Villeneuve?",
+    "answer": "Denis Villeneuve",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ab57e66554299637185c5b1",
+    "question": "Are Thom Yorke and Bruce Guthro both members of the alternative rock band Radiohead?",
+    "answer": "no",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a87198c55429960ec39b740",
+    "question": "Kesektan is to be the center of the newly created Hesa Duwum Kohistan District in a province in the north-east of Afghanistan, and whose capital is what?",
+    "answer": "Mahmud-i-Raqi",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_6997460348339339154",
+    "question": "a quorum for a decision in the supreme court is",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_6082661436341148616",
+    "question": "which book of allama iqbal published after his death",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_4450495105383493699",
+    "question": "who is the lead singer of portugal the man",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-7568066791876445296",
+    "question": "who did the voices for the movie coco",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a74b5d655429974ef308c3d",
+    "question": "What member of Cantopop group Twins makes a special appearance in the film Love on the Rocks?",
+    "answer": "Charlene Choi",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a7b1d9f55429927d897bf41",
+    "question": "In what state are the headquarters of this American multinational automaker, which has a 50:50 joint venture with Changan Automobile?",
+    "answer": "Michigan",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ac2c958554299657fa2905b",
+    "question": "What genre is The Warriors Gate?",
+    "answer": "action",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-2190780953969254913",
+    "question": "who has the executive power in south carolina",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5ae42a195542995ad6573d0e",
+    "question": "Die Meistersinger von N\u00fcrnberg and Iphig\u00e9nie en Aulide, are which type of music drama?",
+    "answer": "opera",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ae4c17c5542995dadf243e0",
+    "question": "Are Larry Gagosian and Steve Dildarian both art dealers?",
+    "answer": "no",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ae7ec7c554299540e5a569d",
+    "question": "What rock band performed the second single from the 2008 vampire movie starring Kristen Stewart?",
+    "answer": "Mutemath",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a8128e3554299260e20a264",
+    "question": "Kurt Julian Weillwas a German composer, active from the 1920s in his native country, and in his later years in the United States, with Brecht, he developed productions such as his best-known work, the Threepenny Opera is a \"play with music\" by Bertolt Brecht and who, adapted from John Gay's 18th-century English ballad opera, \"The Beggar's Opera\"?",
+    "answer": "Elisabeth Hauptmann",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ab31cd8554299753aec5945",
+    "question": "Where is the company that released Biricodar baseD?",
+    "answer": "Boston, Massachusetts",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_932693489937222155",
+    "question": "how much could a woodchuck chuck woodchuck could chuck wood",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a775a6b5542993735360242",
+    "question": "What peer-reviewed scientific journal published approximately monthly by Springer Science+Business Media was Zden\u011bk \u0160vestka co-founder and editor of?",
+    "answer": "Solar Physics",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a877d6c5542993e715abf76",
+    "question": "Where was the creator of the duck who was impersonated in Little Quacker born?",
+    "answer": "Watonga, Oklahoma",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ab443525542991751b4d712",
+    "question": "Which was a fighter wing of the aerial warfare branch of the combined German Wehrmacht military forces during World War II?",
+    "answer": "\"Jagdgeschwader\" 70",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_5601480726205404743",
+    "question": "when does masterchef australia 2016 start in south africa",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-2088379430419346513",
+    "question": "when was the canon of the old testament established",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-6904431480457181347",
+    "question": "who does the truckers voice in joy ride",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a88bef0554299206df2b35b",
+    "question": "What actor in Holding the Fort is also known for being a television presenter for shows \"Game for a Laugh\", \"You Bet!\" and \"Stars in Their Eyes\"?",
+    "answer": "Matthew Kelly",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_7313377030038041049",
+    "question": "the goldfarb v. virginia state bar decision on anti-trust laws was decided at what level",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a8ecc4b5542995085b37493",
+    "question": "Unlike a certain secretive recipe, Open-source cola is published. Who founded the secret formula?",
+    "answer": "Asa Candler",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_7518901653966781497",
+    "question": "who won the hundred years war and why",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_3399177091492358416",
+    "question": "who took the israelites to the promised land",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5ac0207f5542996f0d89cb2b",
+    "question": "Who is the director of the horror comedy that Josh Stolberg participated screenwriting?",
+    "answer": "Alexandre Aja",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a89d1ef5542993b751ca9a1",
+    "question": "How much money did the owner of the 165 acre drumlin or the mansion that sits on the hill donate to the construction fund for the Benjamin Stickney Cable Memorial Hospital?",
+    "answer": "$145,000",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_1445716172256538331",
+    "question": "what is the valley of dry bones about",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a8c3d3d5542997f31a41e00",
+    "question": "Abraham Bankier was one of the owners of the Rekord factory that was taken over by a German Industrialist, spy, and member of the Nazi Party who is credited with saving how many Jews during the Holocaust?",
+    "answer": "1,200",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_7336265151407907701",
+    "question": "where did piss up a rope come from",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a8611ae5542996432c57192",
+    "question": "Say Yes is the 12th episode of the horror series shown on which cable network?",
+    "answer": "AMC",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ab67cbe5542995eadef0006",
+    "question": "Lucky Yates is known for his voice-over roles as Dr. Krieger on a spy sitcom created by who ?",
+    "answer": "Adam Reed",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_8596965163757164515",
+    "question": "secreted by cells in the walls of the hearts atria",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-4917443821002881235",
+    "question": "where is the stomach located on a cat",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_4960332926670330050",
+    "question": "the little drummer boy bing crosby david bowie",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5adf8c80554299025d62a2b1",
+    "question": "Which author whose work has been adapted into 112 films also was a co-author for Open Range.",
+    "answer": "Zane Grey",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a8ff74d5542995651fb5088",
+    "question": "The present observation of Greenery is a holiday that stems from the celebration of a birthday of an emperor whose name means what in English ?",
+    "answer": "abundant benevolence",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-4725545889451186120",
+    "question": "like other parts of the west the cattle range was",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a7b4f3c5542995eb53be909",
+    "question": "Who makes the liqueur that Atholl Brose tastes like when made with cream?",
+    "answer": "Gilbeys of Ireland",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-6782725454507448842",
+    "question": "according to the treaty of guadalupe hidalgo mexico surrendered all territory between texas and the",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_5600316607306140099",
+    "question": "cagliari - as roma serie a - italy - football",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-5055733874339945659",
+    "question": "how many episodes per series in breaking bad",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_1176405295449120072",
+    "question": "which ikea store is the largest in uk",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a84877c5542992ef85e241a",
+    "question": "Three Nationwide Plaza is a 408 ft(124m) postmodern highrise building located at the address 3 Nationwide Plaza in Downtown Columbus, Nationwide Plaza is the headquarters of Nationwide Mutual Insurance Company, and affiliated companies, are a group of large U.S. insurance and financial services companies based in Columbus in which US state (acronym)?",
+    "answer": "OH",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ae5fc7d554299546bf82ffd",
+    "question": "Deliver Us From Evil explores the life of what Irish priest who raped, molested and abused at least 25 children in what state?",
+    "answer": "California",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_-2630368675642018826",
+    "question": "who plays tara's mom on true blood",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-4823817194198394472",
+    "question": "who plays the little girl in field of dreams",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "nq_-4678463991877436296",
+    "question": "where do the chicago white sox play spring training",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a72fe125542994cef4bc419",
+    "question": "What is the name of the South Korean actor who is well known for his role in the 2016 South Korean television series W and starred alongside Han Hyo-joo?",
+    "answer": "Lee Jong-suk",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ae73d145542991e8301cc28",
+    "question": "Lokomotiv Yaroslavl was the team founded in 2011 after the plane crash near which airport?",
+    "answer": "Tunoshna Airport",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a74632755429979e2882934",
+    "question": "What Brazilian professional footballer endorsed the Mercurial Vapor boot?",
+    "answer": "Philippe Coutinho Correia",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5a74e3b455429974ef308c8a",
+    "question": "Martin Manley served as the Executive Director to a school name after whom?",
+    "answer": "Bertil Hult",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5ae2e3eb554299492dc91c7a",
+    "question": "Which  equestrian weekly magazine of the United Kingdom is Mark Phillips a columnist in ",
+    "answer": "Horse & Hound",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "nq_2121647733999062755",
+    "question": "when did the kings of comedy come out",
+    "answer": "",
+    "dataset_source": "nq"
+  },
+  {
+    "query_id": "hp_5a81ba2c5542995ce29dcc5a",
+    "question": "Gr\u00e9gory Levasseur produced the 2003 horror film directed by whom?",
+    "answer": "Alexandre Aja",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5adf3b3a5542992d7e9f92f6",
+    "question": "Jack Hoffman was introduced to the current running back for which team while the player was at the University of Nebraska?",
+    "answer": "New England Patriots",
+    "dataset_source": "hotpotqa"
+  },
+  {
+    "query_id": "hp_5abc60945542993a06baf8e0",
+    "question": "The American web televison series, which is set in the MCU, stars an actress who is also known as \"what\" for having rolls in horror films such as \"Prom Night\" and \"Vampire Bats\"?",
+    "answer": "scream queen",
+    "dataset_source": "hotpotqa"
+  }
+]
