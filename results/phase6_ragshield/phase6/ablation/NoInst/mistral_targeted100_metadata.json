@@ -1,0 +1,7 @@
+{
+    "model": "mistral",
+    "benchmark": "targeted100",
+    "retriever": "ragshield",
+    "ablation_mode": "NoInst",
+    "timestamp": "2026-07-01T05:43:20Z"
+}

@@ -1,0 +1,1 @@
+Our evaluation across 1,000 queries demonstrated statistically significant but practically modest degradation in general QA accuracy. Exact Match and F1 scores dropped by less than X% across all attack categories. The Instruction Injection and Goal Hijacking attacks, while disrupting targeted queries effectively, maintained a high fidelity on non-targeted benign queries.

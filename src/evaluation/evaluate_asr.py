@@ -9,6 +9,7 @@ import re
 import string
 import requests
 import numpy as np
+import psutil
 
 # Set threading explicitly for FAISS
 os.environ["OMP_NUM_THREADS"] = "1"
@@ -144,7 +145,8 @@ def main():
         ("Clean", "data/processed/faiss_index_15k.index", "data/processed/chunk_mapping_15k.json"),
         ("1pct", "data/processed/faiss_index_attacked_1pct.index", "data/processed/chunk_mapping_attacked_1pct.json"),
         ("5pct", "data/processed/faiss_index_attacked_5pct.index", "data/processed/chunk_mapping_attacked_5pct.json"),
-        ("10pct", "data/processed/faiss_index_attacked_10pct.index", "data/processed/chunk_mapping_attacked_10pct.json")
+        ("10pct", "data/processed/faiss_index_attacked_10pct.index", "data/processed/chunk_mapping_attacked_10pct.json"),
+        ("20pct", "data/processed/faiss_index_attacked_20pct.index", "data/processed/chunk_mapping_attacked_20pct.json")
     ]
     
     completed_keys = set()
@@ -240,6 +242,12 @@ def main():
                 writer.writerow(row)
                 csvfile.flush()
                 completed_in_corpus += 1
+                
+                if (idx + 1) % 50 == 0:
+                    mem = psutil.virtual_memory()
+                    swap = psutil.swap_memory()
+                    print(f"Memory Check -> RAM: {mem.used / (1024**3):.2f}GB ({mem.percent}%) | Swap: {swap.used / (1024**3):.2f}GB ({swap.percent}%)")
+                    gc.collect()
                 
             # Memory cleanup
             print(f"Freeing memory for {corpus_name}...")

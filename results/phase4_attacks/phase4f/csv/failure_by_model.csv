@@ -1,0 +1,4 @@
+model,Generation Divergence,Partial Poison Adoption,Prior Knowledge Dominance,Prompt Resistance,Retrieval Failure,Successful Manipulation
+llama3.1:8b,41.5,5.75,10.5,37.5,0.75,4.0
+mistral,48.86045581767293,10.835665733706518,10.875649740103958,26.269492203118755,0.6797281087564974,2.4790083966413436
+qwen2.5:7b,39.75,6.75,9.75,38.75,0.75,4.25

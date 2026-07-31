@@ -1,0 +1,7 @@
+{
+    "model": "qwen2.5:7b",
+    "benchmark": "clean100",
+    "retriever": "baseline",
+    "ablation_mode": "Full",
+    "timestamp": "2026-06-30T19:49:49Z"
+}

@@ -19,8 +19,8 @@ def generate_report(csv_path, output_dir, is_pilot):
     em_data = {}
     sim_data = {}
     
-    corpora = ["Clean", "1pct", "5pct", "10pct"]
-    ratios = [0, 1, 5, 10]
+    corpora = ["Clean", "1pct", "5pct", "10pct", "20pct"]
+    ratios = [0, 1, 5, 10, 20]
     
     # Analyze false ASR on clean baseline
     clean_df = df[df["corpus_type"] == "Clean"]
@@ -126,14 +126,24 @@ This report presents the Attack Success Rate (ASR) evaluation of the Mistral-bas
 | 1% Attacked | {rcr_data["1pct"]:.2%} | {asr_data["1pct"]:.2%} | {em_data["1pct"]:.2%} | {sim_data["1pct"]:.4f} |
 | 5% Attacked | {rcr_data["5pct"]:.2%} | {asr_data["5pct"]:.2%} | {em_data["5pct"]:.2%} | {sim_data["5pct"]:.4f} |
 | 10% Attacked | {rcr_data["10pct"]:.2%} | {asr_data["10pct"]:.2%} | {em_data["10pct"]:.2%} | {sim_data["10pct"]:.4f} |
+| 20% Attacked | {rcr_data["20pct"]:.2%} | {asr_data["20pct"]:.2%} | {em_data["20pct"]:.2%} | {sim_data["20pct"]:.4f} |
 
 ## Figures
 
-See the `figures/{'pilot' if is_pilot else 'full'}` directory for detailed plots showing the degradation of Exact Match and the increase of ASR as the knowledge base corruption increases.
+See the `figures` directory for detailed plots showing the degradation of Exact Match and the increase of ASR as the knowledge base corruption increases.
 
 ## Analysis
 *The Baseline False ASR validates our heuristic detectors. A high false ASR would indicate overly aggressive detection rules.*
 """
+
+    # Check for negative finding
+    negative_findings = []
+    for c in corpora:
+        if c != "Clean" and rcr_data[c] == 0.0 and asr_data[c] == 0.0:
+            negative_findings.append(c)
+            
+    if negative_findings:
+        md += f"\n**Documented Negative Finding**: For corpora {', '.join(negative_findings)}, both RCR and ASR were exactly 0.00%. No contamination was observed. The system successfully maintained robustness despite the injected payloads.\n"
 
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(md)

@@ -1,0 +1,5 @@
+corpus_normalized,Generation Divergence,Partial Poison Adoption,Prior Knowledge Dominance,Prompt Resistance,Retrieval Failure,Successful Manipulation
+Goal Hijacking,54.125,0.0,10.375,27.875,1.625,6.0
+Information Extraction,30.25,27.0,10.5,30.875000000000004,1.0,0.375
+Instruction Injection,56.875,0.0,12.125,29.375,0.125,1.5
+Knowledge Poisoning,46.281908990011104,11.653718091009988,9.877913429522753,28.523862375138737,0.11098779134295228,3.551609322974473

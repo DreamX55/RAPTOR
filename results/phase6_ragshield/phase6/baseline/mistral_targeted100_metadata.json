@@ -1,0 +1,7 @@
+{
+    "model": "mistral",
+    "benchmark": "targeted100",
+    "retriever": "baseline",
+    "ablation_mode": "Full",
+    "timestamp": "2026-06-30T19:00:39Z"
+}

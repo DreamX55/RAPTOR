@@ -1,0 +1,7 @@
+{
+    "model": "llama3.1:8b",
+    "benchmark": "targeted100",
+    "retriever": "ragshield",
+    "ablation_mode": "Full",
+    "timestamp": "2026-07-01T05:00:08Z"
+}

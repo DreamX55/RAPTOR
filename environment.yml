@@ -1,0 +1,23 @@
+name: raptor
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cpuonly
+  - faiss-cpu
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - pip
+  - pip:
+    - transformers
+    - datasets
+    - accelerate

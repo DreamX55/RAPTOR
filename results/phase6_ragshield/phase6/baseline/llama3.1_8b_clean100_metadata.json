@@ -1,0 +1,7 @@
+{
+    "model": "llama3.1:8b",
+    "benchmark": "clean100",
+    "retriever": "baseline",
+    "ablation_mode": "Full",
+    "timestamp": "2026-06-30T21:26:29Z"
+}

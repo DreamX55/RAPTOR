@@ -1,0 +1,4 @@
+| Experiment              | Poison Ratio   | RCR    | ASR   | Exact Match   | Semantic Similarity   |
+|:------------------------|:---------------|:-------|:------|:--------------|:----------------------|
+| Phase 4A (20%)          | 20.0%          | 0.00%  | 0.00% | 0.00%         | 0.12                  |
+| Phase 4B Ext (Targeted) | 0.469%         | 99.80% | 2.40% | N/A           | N/A                   |

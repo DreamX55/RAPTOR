@@ -1,0 +1,7 @@
+{
+    "model": "qwen2.5:7b",
+    "benchmark": "clean100",
+    "retriever": "ragshield",
+    "ablation_mode": "Full",
+    "timestamp": "2026-07-01T00:53:19Z"
+}

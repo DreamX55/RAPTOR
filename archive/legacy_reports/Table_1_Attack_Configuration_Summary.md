@@ -1,0 +1,4 @@
+| Corpus              |   Clean Chunk Count |   Poison Chunk Count | Poison Ratio (%)   | Attack Category     |
+|:--------------------|--------------------:|---------------------:|:-------------------|:--------------------|
+| Phase 4A (20%)      |              106463 |                21292 | 20.00%             | Random / Untargeted |
+| Phase 4B (Targeted) |              106463 |                  101 | 0.095%             | Knowledge Poisoning |

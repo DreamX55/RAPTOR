@@ -1,0 +1,50 @@
+# RAGShield Configuration
+
+modules:
+  enable_instruction_detector: true
+  enable_consensus: true
+  enable_reranker: true
+  enable_sanitizer: true
+  enable_trust_scorer: true
+
+# Weights for the Trust Index (must sum to roughly 1.0 or be scaled appropriately)
+# A positive weight INCREASES trust, a negative weight DECREASES trust.
+weights:
+  retrieval_confidence: 0.45
+  consensus_score: 0.35
+  instruction_signal: -0.20
+
+thresholds:
+  minimum_rti_score: 0.40
+
+instruction_detector:
+  patterns:
+    - "ignore previous instructions"
+    - "system override"
+    - "assistant:"
+    - "user:"
+    - "important"
+    - "correction"
+    - "respond with"
+    - "output exactly"
+    - "click here"
+    - "subscribe"
+    - "ignore the question"
+    - "new instructions"
+    - "override"
+    - "system:"
+
+sanitizer:
+  # The sanitizer will physically remove these tokens from the chunk text
+  removal_terms:
+    - "Ignore previous instructions"
+    - "ignore previous instructions"
+    - "Assistant:"
+    - "assistant:"
+    - "User:"
+    - "user:"
+    - "System:"
+    - "system:"
+    - "IMPORTANT"
+    - "System Override"
+    - "system override"
